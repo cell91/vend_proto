@@ -1,0 +1,30 @@
+@font-face {
+	font-family: gotham;
+	src: url(logo_font.ttf);
+}
+.navbar-brand {
+	color: grey;
+	font-family: gotham;
+}
+
+.navbar-brand span {
+	color: #3498db;
+}
+
+.btn {
+	border-radius: 90px;
+}
+
+.para {
+	font-size: 1.2em;
+	color: grey;
+	border-left-width: 2px;
+	border-left-color: #3498db;
+	border-left-style: solid;
+	padding-left: 1em;
+}
+
+.spacing >  *{
+	margin: 0.5em 0.2em;
+}
+
