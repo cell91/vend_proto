@@ -10,38 +10,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
 </head>
 <body>
-	<div class="container">
-		<div class="navbar">
-			<div class="navbar-brand">
-				<a style="color: black"href=#>vendsol<span>.</span></a>
+	<!--NAVBAR-->
+	<div class="my-nav">
+		<div class="container">
+			<div class="d-flex justify-content-between align-items-center">
+				<a class='logo' href="#">vendsol<span style="color:#3498db">.</span></a>
+
+				<div class='menu'>
+					<a href="#" class='my-active'>Home</a>
+					<a href="#product">About</a>
+					<a href="#">Contact</a>
+					<a href="#">ThinkTank</a>
+					<a href="#">Blog</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="mobile" class="my-nav">
+		<div class='container'>
+			<div class="d-flex justify-content-between align-items-center">
+				<a class='logo' href="#">vendsol<span style="color:#3498db">.</span></a>
+				<i id="menu-button" class="fas fa-bars"></i>
 			</div>
 
+			<ul class="my-hidden hide">
+				<li><a href="#" class='my-active'>Home</a></li>
+				<li><a href="#product">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">ThinkTank</a></li>
+				<li><a href="#">Blog</a></li>
+			</ul>
 		</div>
+	</div>
 
+
+
+	<!-- BANNER -->
+	<br>
+	<br>
+	<br>
+	<div id=main class="container box"> 
 		<div class="d-flex flex-column flex-md-row-reverse align-items-center">
 			<div class="col">
 				<img class='img-fluid' src="img/please-2.png">
 			</div>
 
-			<div class="col spacing">
+			<div class="col">
 				<h1>Landing Title</h1>
-				<p class='para'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class='para spacing'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.</p>
-				<button class="btn btn-outline-primary" >I am an individual</button>
-				<button class="btn btn-outline-primary" >We are bussiness</button>
+				<button class="btn btn-outline-primary">Individual</button>
+				<button class="btn btn-outline-primary">Bussiness</button>
 
 			</div>
 
 		</div>
-
-
-		
-		
-
 	</div>
-	
+
+	<!--Product-->
+
+	<div id="product" class="container box">
+		<div class="d-flex flex-column flex-md-row">
+			<div class="col ">
+				<img class="img-fluid" src="img/please.png">
+			</div>
+
+			<div class="col">
+				<h2>V3ND Omni </h2>
+				<p class="para">Omni is an automatic storefront that sells your products 24/7.</p>
+
+				<h4>What it does</h4>
+				<ul>
+					<li>Sells your products 24/7</li>
+					<li>Fits the capacity you want</li>
+					<li>Migrates from traditional stores that needs human staff</li>
+				</ul>
+
+				<button class='btn btn-outline-primary'>See how it works <i class="fab fa-youtube"></i></button>
+				<button class='btn btn-link'>learn more</button>
+			</div>
+		</div>
+	</div>
 </body>
+
+<script type="text/javascript">
+	$("#menu-button").click(() => {
+		$(".my-hidden").toggleClass("hide")
+	})
+
+</script>
+
 </html>

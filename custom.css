@@ -2,17 +2,19 @@
 	font-family: gotham;
 	src: url(logo_font.ttf);
 }
-.navbar-brand {
-	color: grey;
-	font-family: gotham;
+@font-face {
+	font-family: manrope;
+	src: url(manrope.ttf);
 }
 
-.navbar-brand span {
-	color: #3498db;
-}
+
+/* UNIVERSAL */
 
 .btn {
 	border-radius: 90px;
+	border-width: 2px;
+	font-family: manrope;
+	font-weight: bold;
 }
 
 .para {
@@ -24,7 +26,93 @@
 	padding-left: 1em;
 }
 
-.spacing >  *{
-	margin: 0.5em 0.2em;
+.spacing {
+	margin: 1em 0em;
 }
 
+.box {
+	margin-bottom: 4em;
+}
+
+li {
+	font-size: 1.2em;
+	color: grey;
+}
+
+
+
+/* NAVBAR */
+.my-nav {
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;;
+	box-shadow: 0px 4px 10px lightgrey;
+	background-color: white;
+	/*
+	border-bottom-style: solid;
+	border-bottom-color: #3498db;
+	border-bottom-width: 2px;*/
+}
+
+.logo {
+	font-family: gotham;
+	font-weight: bold;
+	font-size: 1.4em;
+	color:black;
+	padding: 0.4em 0em;
+}
+
+.menu {
+	font-family: manrope;
+}
+
+
+.menu > a {
+	margin: 0em 1em;
+	color: grey;
+}
+
+.my-active {
+	color: #3498db;
+	font-weight: bold;
+}
+
+.my-hidden {
+	text-align: right;
+	list-style-type: none;
+}
+
+.my-hidden a{
+	font-family: manrope;
+	color: grey;
+}
+
+.hide {
+	display: none;
+}
+
+#mobile {
+	font-size: 1.2em;
+}
+
+
+
+/* BANNER */
+
+
+
+/*SCREENS*/
+@media screen and (min-width: 35.5em) {
+	#mobile {
+		display: block;
+	}
+	
+}
+
+@media screen and (min-width: 56em) {
+	#mobile {
+		display: none;
+	}
+}
