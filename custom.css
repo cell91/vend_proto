@@ -50,10 +50,7 @@ li {
 	width: 100%;;
 	box-shadow: 0px 4px 10px lightgrey;
 	background-color: white;
-	/*
-	border-bottom-style: solid;
-	border-bottom-color: #3498db;
-	border-bottom-width: 2px;*/
+	
 }
 
 .logo {
@@ -79,6 +76,7 @@ li {
 	font-weight: bold;
 }
 
+
 .my-hidden {
 	text-align: right;
 	list-style-type: none;
@@ -86,7 +84,6 @@ li {
 
 .my-hidden a{
 	font-family: manrope;
-	color: grey;
 }
 
 .hide {
@@ -101,6 +98,29 @@ li {
 
 /* BANNER */
 
+
+
+
+/* FEATURES */
+.feat {
+	border-radius: 16px;
+	border: 2px solid lightgrey;
+	font-family: manrope;
+	color: grey;
+	padding: 1em;
+	width: 20em;
+	margin: 1em;
+}
+
+.feat i {
+	color: #3498db;
+	font-size: 6em;
+	margin: 0.1em 0em;
+}
+
+h3 {
+	font-weight: bold;
+}
 
 
 /*SCREENS*/
